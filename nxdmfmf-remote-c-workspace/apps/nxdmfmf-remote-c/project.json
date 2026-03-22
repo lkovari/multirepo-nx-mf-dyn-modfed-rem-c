@@ -1,0 +1,118 @@
+{
+  "name": "nxdmfmf-remote-c",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/nxdmfmf-remote-c/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/nxdmfmf-remote-c",
+        "index": "apps/nxdmfmf-remote-c/src/index.html",
+        "main": "apps/nxdmfmf-remote-c/src/main.ts",
+        "tsConfig": "apps/nxdmfmf-remote-c/tsconfig.app.json",
+        "inlineStyleLanguage": "css",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/nxdmfmf-remote-c/public"
+          }
+        ],
+        "styles": ["apps/nxdmfmf-remote-c/src/styles.css"],
+        "customWebpackConfig": {
+          "path": "apps/nxdmfmf-remote-c/webpack.config.ts"
+        }
+      },
+      "configurations": {
+        "production": {
+          "baseHref": "/nxdmfmf-remote-c/",
+          "deployUrl": "/nxdmfmf-remote-c/",
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/nxdmfmf-remote-c/webpack.prod.config.ts"
+          }
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        },
+        "standalone": {
+          "baseHref": "/",
+          "deployUrl": "/",
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/nxdmfmf-remote-c/webpack.config.ts"
+          }
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/angular:dev-server",
+      "options": {
+        "buildTarget": "nxdmfmf-remote-c:build:development",
+        "port": 4203,
+        "host": "0.0.0.0",
+        "publicHost": "http://localhost:4203"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "nxdmfmf-remote-c:build:production"
+        },
+        "development": {
+          "buildTarget": "nxdmfmf-remote-c:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@angular/build:unit-test",
+      "options": {}
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "nxdmfmf-remote-c:build:standalone",
+        "port": 4203,
+        "staticFilePath": "dist/apps/nxdmfmf-remote-c",
+        "spa": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "nxdmfmf-remote-c:build:production"
+        },
+        "development": {
+          "buildTarget": "nxdmfmf-remote-c:build:development"
+        },
+        "standalone": {
+          "buildTarget": "nxdmfmf-remote-c:build:standalone"
+        }
+      },
+      "defaultConfiguration": "standalone"
+    }
+  }
+}

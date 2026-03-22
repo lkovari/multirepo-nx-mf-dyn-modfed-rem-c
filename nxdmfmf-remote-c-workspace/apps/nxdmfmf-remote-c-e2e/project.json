@@ -1,0 +1,9 @@
+{
+  "name": "nxdmfmf-remote-c-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/nxdmfmf-remote-c-e2e/src",
+  "implicitDependencies": ["nxdmfmf-remote-c"],
+  "// targets": "to see all targets run: nx show project nxdmfmf-remote-c-e2e --web",
+  "targets": {}
+}

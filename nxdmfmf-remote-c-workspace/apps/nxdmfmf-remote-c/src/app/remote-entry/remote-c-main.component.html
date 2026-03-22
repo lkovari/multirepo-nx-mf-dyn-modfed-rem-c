@@ -1,0 +1,60 @@
+<div class="flex flex-col gap-6 max-w-5xl mx-auto p-4 md:p-6">
+  <header class="rounded-xl border border-purple-100 bg-purple-50 p-8 text-center">
+    <h1 class="text-4xl font-bold text-slate-800 mb-4">
+      Angular Nx (multi-repo) Micro-frontend App nxdmfmf-remote-<span class="text-blue-600">c</span>
+    </h1>
+    <p class="text-lg text-slate-600 leading-relaxed">
+      This page is loaded from repo: multirepo-nx-mf-dyn-modfed-rem-c
+      workspace: nxdmfmf-remote-c-workspace app: nxdmfmf-remote-c
+    </p>
+    <p class="text-base text-slate-600 mt-2">Last update date: {{ lastUpdate }}</p>
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section class="rounded-xl border border-purple-100 bg-purple-50 p-8">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Remote C Overview</h2>
+      <p class="text-base text-slate-800 leading-relaxed">
+        This is an independent microfrontend application that can be developed, tested, and deployed
+        separately from the host application and other remotes. This microfrontend demonstrates the
+        flexibility of Dynamic Module Federation architecture, allowing multiple teams to work
+        independently while maintaining a cohesive user experience.
+      </p>
+    </section>
+
+    <section class="rounded-xl border border-purple-100 bg-purple-50 p-8">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Workspace ToDo</h2>
+      <ul class="list-[square] list-inside text-base text-slate-800 leading-relaxed space-y-2 marker:text-slate-800">
+        <li>Global error handling</li>
+        <li>HTTP interceptor to add Correlation Id</li>
+        <li>Global wait spinner</li>
+        <li>Add tests, Min 80% test coverage</li>
+        <li>Fix warnings</li>
+        <li>Fix lint errors/warnings</li>
+        <li>Create proper folder structure, vertical sliced DDD style folder structure</li>
+        <li>SASS?</li>
+      </ul>
+    </section>
+
+    <section class="rounded-xl border border-purple-100 bg-purple-50 p-8">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Architecture</h2>
+      <p class="text-base text-slate-800 leading-relaxed">
+        I read a good article on the
+        <a
+          href="https://nx.dev/blog"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 underline bg-blue-100"
+          >Nx Blog</a
+        >
+        that can be a guide on architectural topics. Check the video about
+        <a
+          href="https://www.youtube.com/results?search_query=vertical+slicing+architecture"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 underline"
+          >Vertical slicing</a
+        >.
+      </p>
+    </section>
+  </div>
+</div>
