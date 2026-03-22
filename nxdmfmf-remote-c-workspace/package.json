@@ -6,6 +6,7 @@
     "build": "nx build nxdmfmf-remote-c",
     "serve": "nx serve nxdmfmf-remote-c",
     "serve-static": "NX_DAEMON=false nx run nxdmfmf-remote-c:serve-static",
+    "deploy": "npx wrangler pages deploy dist/apps/nxdmfmf-remote-c",
     "reset": "nx reset"
   },
   "private": true,
