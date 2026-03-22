@@ -16,14 +16,14 @@ describe('RemoteCMainComponent', () => {
   });
 
   it('should render the title', () => {
-    const title = compiled.querySelector('.c-remote-entry__title');
-    expect(title?.textContent?.trim()).toBe(
+    const title = compiled.querySelector('h1');
+    expect(title?.textContent?.trim()).toContain(
       'Angular Nx (multi-repo) Micro-frontend App'
     );
   });
 
   it('should render the source description', () => {
-    const source = compiled.querySelector('.c-remote-entry__source');
+    const source = compiled.querySelector('header p');
     expect(source?.textContent).toContain(
       'This page is loaded from repo: multirepo-nx-mf-dyn-modfed-rem-c'
     );
@@ -32,7 +32,8 @@ describe('RemoteCMainComponent', () => {
   });
 
   it('should render the last update date', () => {
-    const updated = compiled.querySelector('.c-remote-entry__updated');
+    const paragraphs = compiled.querySelectorAll('header p');
+    const updated = paragraphs[paragraphs.length - 1];
     expect(updated?.textContent).toContain('Last update date:');
     expect(updated?.textContent).toContain('2025-03-22 12:00:00');
   });

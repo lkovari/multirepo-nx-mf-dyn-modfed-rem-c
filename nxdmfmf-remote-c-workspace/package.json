@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build": "nx build nxdmfmf-remote-c",
     "serve": "nx serve nxdmfmf-remote-c",
     "serve-static": "NX_DAEMON=false nx run nxdmfmf-remote-c:serve-static",
     "reset": "nx reset"
