@@ -7,7 +7,7 @@ const LAST_UPDATE = '2025-03-22 12:00:00';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './remote-c-main.component.html',
-  styleUrl: './remote-c-main.component.css',
+  styleUrls: ['./remote-c-main.component.css', '../../styles.css'],
 })
 export class RemoteCMainComponent {
   protected readonly lastUpdate = LAST_UPDATE;
