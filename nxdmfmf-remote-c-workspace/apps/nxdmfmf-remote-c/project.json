@@ -62,6 +62,26 @@
           "customWebpackConfig": {
             "path": "apps/nxdmfmf-remote-c/webpack.config.ts"
           }
+        },
+        "github-pages": {
+          "baseHref": "/multirepo-nx-mf-dyn-modfed-rem-c/",
+          "deployUrl": "/multirepo-nx-mf-dyn-modfed-rem-c/",
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/nxdmfmf-remote-c/webpack.gh-pages.config.ts"
+          }
         }
       },
       "defaultConfiguration": "production"
