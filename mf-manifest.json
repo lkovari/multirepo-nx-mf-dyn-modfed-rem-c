@@ -1,0 +1,189 @@
+{
+  "id": "nxdmfmf_remote_c",
+  "name": "nxdmfmf_remote_c",
+  "metaData": {
+    "name": "nxdmfmf_remote_c",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "@nxdmfmf-remote-c-workspace/source"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.mjs",
+      "path": "",
+      "type": "module"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "nxdmfmf_remote_c",
+    "pluginVersion": "2.2.3",
+    "prefetchInterface": false,
+    "publicPath": "/multirepo-nx-mf-dyn-modfed-rem-c/"
+  },
+  "shared": [
+    {
+      "id": "nxdmfmf_remote_c:@angular/common/http",
+      "name": "@angular/common/http",
+      "version": "21.2.5",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "280.c7945bcf20a24f5f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "nxdmfmf_remote_c:@angular/common",
+      "name": "@angular/common",
+      "version": "21.2.5",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "77.4f587241200e0d2e.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "nxdmfmf_remote_c:@angular/core/primitives/di",
+      "name": "@angular/core/primitives/di",
+      "version": "21.2.5",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.e30219f299925682.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "nxdmfmf_remote_c:@angular/core/primitives/signals",
+      "name": "@angular/core/primitives/signals",
+      "version": "21.2.5",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.e30219f299925682.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "nxdmfmf_remote_c:@angular/core",
+      "name": "@angular/core",
+      "version": "21.2.5",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "759.258fbf560c3d949b.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "nxdmfmf_remote_c:@angular/platform-browser",
+      "name": "@angular/platform-browser",
+      "version": "21.2.5",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "945.354394ce8be9910e.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    },
+    {
+      "id": "nxdmfmf_remote_c:@angular/router",
+      "name": "@angular/router",
+      "version": "21.2.5",
+      "singleton": true,
+      "requiredVersion": "~21.2.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "23.d411aa459b2de114.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "fallback": ""
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "nxdmfmf_remote_c:Routes",
+      "name": "Routes",
+      "assets": {
+        "js": {
+          "sync": [
+            "__federation_expose_Routes.1ab0ecdc7599e2b2.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "./Routes"
+    }
+  ]
+}
